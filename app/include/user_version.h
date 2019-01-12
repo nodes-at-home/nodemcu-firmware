@@ -12,7 +12,7 @@
 #define NODE_VERSION_STR(x)	#x
 #define NODE_VERSION_XSTR(x)	NODE_VERSION_STR(x)
 
-#define NODE_VERSION	"NodeMCU nodes@home_pixel"
+#define NODE_VERSION	"NodeMCU nodes@home_standard"
 
 #ifndef BUILD_DATE
 #define BUILD_DATE \
