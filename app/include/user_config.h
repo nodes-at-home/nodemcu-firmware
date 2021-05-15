@@ -7,8 +7,8 @@
 // this out and enabling the explicitly size, e.g. FLASH_4M.  Valid sizes are
 // FLASH_512K, FLASH_1M, FLASH_2M, FLASH_4M, FLASH_8M, FLASH_16M.
 
-//#define FLASH_AUTOSIZE
-#define FLASH_4M
+#define FLASH_AUTOSIZE
+//#define FLASH_4M
 
 
 // The firmware now selects a baudrate of 115,200 by default, but the driver
@@ -52,14 +52,14 @@
 
 //#define LUA_NUMBER_INTEGRAL
 
-// When using Lua 5.3, two different builds are now supported. 
+// When using Lua 5.3, two different builds are now supported.
 // The main difference is in the processing of numeric data types.
 // If LUA_NUMBER_64BITS is defined, then doubles are used to hold floating
 // point numbers. Integers under 2^53 are representable exactly in doubles.
-// Integers are held in 64-bit variables. 
+// Integers are held in 64-bit variables.
 // Otherwise all floating point operations use floats. Only integers under 2^24
 // can be represented exactly in floating point. Integers are represented in 32 bit variables.
-// Note that Lua 5.3 also supports Integers natively, but you have to be careful 
+// Note that Lua 5.3 also supports Integers natively, but you have to be careful
 // not to promote an integer to a floating point variable if you are using a float build
 // as you can lose precision.
 
@@ -79,7 +79,7 @@
 // LUA_FLASH_STORE defines the default partition size if the NodeMCU partition
 // tool is not used.
 
-//#define LUA_FLASH_STORE                   0x10000
+#define LUA_FLASH_STORE                   0x40000
 
 // By default Lua executes the file init.lua at start up.  The following
 // define allows you to replace this with an alternative startup.  Warning:
@@ -178,7 +178,7 @@
 // alphanumeric characters. If you are imaging multiple modules with this
 // firmware then you must also define WIFI_STA_HOSTNAME_APPEND_MAC to
 // append the last 3 octets of the MAC address.  Note that the total
-// Hostname MUST be 32 chars or less. If the resulting hostname is 
+// Hostname MUST be 32 chars or less. If the resulting hostname is
 // invalid, then it will not be used, and a message will be printed
 // during boot.
 
