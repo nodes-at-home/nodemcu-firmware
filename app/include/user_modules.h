@@ -8,7 +8,7 @@
 // See https://github.com/nodemcu/nodemcu-firmware/pull/1127 for discussions.
 // New modules should be disabled by default and added in alphabetical order.
 #define LUA_USE_MODULES_ADC
-//#define LUA_USE_MODULES_ADS1115
+#define LUA_USE_MODULES_ADS1115
 //#define LUA_USE_MODULES_ADXL345
 //#define LUA_USE_MODULES_AM2320
 //#define LUA_USE_MODULES_APA102
@@ -19,7 +19,7 @@
 //#define LUA_USE_MODULES_BME280_MATH
 //#define LUA_USE_MODULES_BME680
 //#define LUA_USE_MODULES_COAP
-//#define LUA_USE_MODULES_COLOR_UTILS
+#define LUA_USE_MODULES_COLOR_UTILS
 //#define LUA_USE_MODULES_CRON
 //#define LUA_USE_MODULES_CRYPTO
 //#define LUA_USE_MODULES_DCC
@@ -46,10 +46,10 @@
 //#define LUA_USE_MODULES_PERF
 //#define LUA_USE_MODULES_PIPE
 //#define LUA_USE_MODULES_PIXBUF
-//#define LUA_USE_MODULES_PWM
-//#define LUA_USE_MODULES_PWM2
+#define LUA_USE_MODULES_PWM
+#define LUA_USE_MODULES_PWM2
 //#define LUA_USE_MODULES_RFSWITCH
-//#define LUA_USE_MODULES_ROTARY
+#define LUA_USE_MODULES_ROTARY
 //#define LUA_USE_MODULES_RTCFIFO
 //#define LUA_USE_MODULES_RTCMEM
 //#define LUA_USE_MODULES_RTCTIME
@@ -68,7 +68,7 @@
 #define LUA_USE_MODULES_TMR
 //#define LUA_USE_MODULES_TSL2561
 #define LUA_USE_MODULES_UART
-//#define LUA_USE_MODULES_U8G2
+#define LUA_USE_MODULES_U8G2
 //#define LUA_USE_MODULES_UCG
 //#define LUA_USE_MODULES_WEBSOCKET
 //#define LUA_USE_MODULES_WIEGAND
@@ -76,8 +76,8 @@
 //#define LUA_USE_MODULES_WIFI_MONITOR
 //#define LUA_USE_MODULES_WPS
 //#define LUA_USE_MODULES_WS2801
-//#define LUA_USE_MODULES_WS2812
-//#define LUA_USE_MODULES_WS2812_EFFECTS
+#define LUA_USE_MODULES_WS2812
+#define LUA_USE_MODULES_WS2812_EFFECTS
 //#define LUA_USE_MODULES_XPT2046
 
 //debug modules
