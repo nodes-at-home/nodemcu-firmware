@@ -7,7 +7,7 @@ cache/
 local/
 user_config.h
 server-ca.crt
-luac.cross
+//luac.cross
 luac.cross.int
 uz_unzip
 uz_zip
